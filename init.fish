@@ -7,6 +7,9 @@ set -x COCOS_CONSOLE_ROOT /usr/local/Cellar/cocos2d-js/tools/cocos2d-console/bin
 set -gx PATH $COCOS_CONSOLE_ROOT $PATH
 set -x ANT_ROOT /usr/local/bin/
 
+# RVM
+rvm default
+
 function start_handler_dev
   # Handler environment variables for db connection:
   set -x ALERTBUSDB_HOST (docker-machine ip default)
