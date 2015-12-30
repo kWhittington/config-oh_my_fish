@@ -25,10 +25,6 @@ function start_handler_dev
   docker_daemon_start
 end
 
-function docker_daemon_start
-  bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'
-end
-
 function remove_skype
   rm -rf /Applications/Skype.app/
   rm -rf ~/Library/Application Support/Skype*
